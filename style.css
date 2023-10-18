@@ -218,3 +218,109 @@ footer span a:hover{
     border-radius: 2px;
     font-family: 'Ubuntu',sans-serif;
 }
+
+
+/* Service section styling*/
+section{
+    padding: 100px 0;
+}
+.services{
+    font-family: 'Poppins',sans-serif;
+    background: #222;
+}
+
+.services .title{
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    font-family: 'Ubuntu',sans-serif;
+    color: lime;
+}
+.services .title::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 200px;
+    height: 3px;
+    background: white;
+    transform: translate(-50%);
+}
+.services .title::after{
+    content: "what i provide";
+    position: absolute;
+    bottom: -18px;
+    left:50%;
+    font-size: 20px;
+    color: black;
+    padding: 5px;
+    background: yellow;
+    transform: translate(-50%);
+}
+
+.services .serv-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.services .serv-content .card{
+    width: calc(33% - 20px);
+    background: beige;
+    text-align: center;
+    border-radius: 6px;
+    padding: 20px 25px;
+    cursor: pointer;
+}
+
+.services .serv-content .card:hover{
+    background: yellow;
+    color: black;
+}
+.services .serv-content .card .box{
+    transition: all 0.3s ease;
+}
+.services .serv-content .card:hover .box{
+    transform: scale(1.05);
+}
+.services .serv-content .card i{
+    font-size: 50px;
+    color: lime;
+    transition: color 0.3s ease;
+}
+.services .serv-content .card:hover i{
+    color: black;
+}
+.services .serv-content .card .text{
+    font-size: 25px;
+    font-weight: 700;
+    margin: 10px 0 7px 0;
+    color: black;
+}
+
+.services .serv-content .card .text p{
+    color:black;
+    font-weight: 600;
+}
+
+
+/* CSS untuk tombol */
+button {
+    background-color: #222; /* Warna latar belakang */
+    color: #fff; /* Warna teks */
+    padding: 10px 20px; /* Padding (ruang dalam tombol) */
+    border: none; /* Tanpa border */
+    cursor: pointer; /* Mengubah ikon kursor saat mengarahkan tombol */
+    font-family: 'Ubuntu',sans-serif;
+    border-radius: 5px;
+    margin-top: 8px;
+  }
+  
+  /* Gaya saat mengarahkan tombol */
+  button:hover {
+    background-color: #585858; /* Warna latar belakang saat mengarahkan */
+  }
+  
