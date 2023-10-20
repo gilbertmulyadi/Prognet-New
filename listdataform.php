@@ -72,5 +72,8 @@ $koneksi->close();
     <span>Created By <a></a>Gilbert</a>
 </footer>
 
+<!-- Button to go back to index.html -->
+<a href="index.html" class="btn btn-primary btn-sm" style="position: fixed; bottom: 20px; right: 20px;">Back to Home</a>
+
 </body>
 </html>
