@@ -87,11 +87,11 @@
                                     <label for="inputPhoneNumber" class="form-label">Phone Number</label>
                                     <input type="text" class="form-control" name="PhoneNumber" id="inputPhoneNumber" value="<?php echo $row['phone_number']; ?>" required/>
                                 </div>
-                                <div class="col-12 mb-3">
-                                    <button type="reset" class="w-100 btn btn-danger btn-reset">Reset</button>
-                                </div>
                                 <div>
                                     <button class="w-100 btn btn-success btn-kirim" type="submit">Resubmit</button>
+                                </div>
+                                <div class="col-12 mb-3">
+                                    <button type="reset" class="w-100 btn btn-danger btn-reset" onclick="window.location.href = 'listdataform.php';">Cancel</button>
                                 </div>
                             </form>
                             
