@@ -31,7 +31,7 @@ if (isset($_GET['id_person'])) {
 
     if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['confirm']) && $_POST['confirm'] == 'Yes') {
         // Proses penghapusan data
-        $sql = "DELETE FROM tb_formulir WHERE id_person = $id";
+        $sql = "DELETE FROM data_orang WHERE id_person = $id";
 
         if ($koneksi->query($sql) === TRUE) {
             echo '<div class="alert alert-success" role="alert"> Data Sucessfully Deleted</div>';

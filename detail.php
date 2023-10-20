@@ -28,7 +28,7 @@
                         include 'koneksi.php';
                         if (isset($_GET['id_person'])) {
                             $id = $_GET['id_person'];
-                            $sql = "SELECT * FROM tb_formulir WHERE id_person = $id";
+                            $sql = "SELECT * FROM data_orang WHERE id_person = $id";
                             $result = $koneksi->query($sql);
                         
                             if ($result->num_rows > 0) {
