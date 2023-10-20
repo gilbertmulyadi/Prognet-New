@@ -82,7 +82,7 @@ $koneksi->close();
 
 ?>
 <div class="col-12 mb-3">
-    <button class="w-100 btn btn-primary" onclick="location.href='listdataform.php'">Back</button>
+    <button onclick="location.href='listdataform.php'">Back</button>
 </div>
 
                             </div>
