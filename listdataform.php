@@ -26,7 +26,7 @@
                         <div class="col-md-50">
                         <?php
 include 'koneksi.php';
-$sql = "SELECT id_person, person_name, age FROM data_orang";
+$sql = "SELECT id, person_name, age FROM data_orang";
 $result = $koneksi->query($sql);
 
 if ($result->num_rows > 0) {

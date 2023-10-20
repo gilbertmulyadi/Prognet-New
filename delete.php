@@ -26,12 +26,12 @@
 
 <?php
 include 'koneksi.php';
-if (isset($_GET['id_person'])) {
-    $id = $_GET['id_person'];
+if (isset($_GET['id'])) {
+    $id = $_GET['id'];
 
     if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['confirm']) && $_POST['confirm'] == 'Yes') {
         // Proses penghapusan data
-        $sql = "DELETE FROM data_orang WHERE id_person = $id";
+        $sql = "DELETE FROM data_orang WHERE id = $id";
 
         if ($koneksi->query($sql) === TRUE) {
             echo '<div class="alert alert-success" role="alert"> Data Sucessfully Deleted</div>';

@@ -25,9 +25,9 @@
                     <?php
                         include 'koneksi.php';
 
-                        if (isset($_GET['id_person'])) {
-                            $id = $_GET['id_person'];
-                            $sql = "SELECT * FROM data_orang WHERE id_person = $id";
+                        if (isset($_GET['id'])) {
+                            $id = $_GET['id'];
+                            $sql = "SELECT * FROM data_orang WHERE id = $id";
                             $result = $koneksi->query($sql);
 
                             if ($result->num_rows > 0) {
@@ -42,7 +42,7 @@
                                         <strong>Your Message Has Been Successfully Submitted!</strong>
                                         <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                                     </div>
-                                <input type="hidden" name="id_person" value="<?php echo $row['id_person']; ?>">
+                                <input type="hidden" name="id" value="<?php echo $row['id']; ?>">
                                 <div class="col-12 mb-3">
                                     <label for="inputPersonName" class="form-label">Name</label>
                                     <input type="text" class="form-control" name="Name" id="inputPersonName" value="<?php echo $row['person_name']; ?>" required/>

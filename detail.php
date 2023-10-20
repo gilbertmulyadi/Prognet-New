@@ -26,9 +26,9 @@
                         <div class="col-md-50">
                         <?php
                         include 'koneksi.php';
-                        if (isset($_GET['id_person'])) {
-                            $id = $_GET['id_person'];
-                            $sql = "SELECT * FROM data_orang WHERE id_person = $id";
+                        if (isset($_GET['id'])) {
+                            $id = $_GET['id'];
+                            $sql = "SELECT * FROM data_orang WHERE id = $id";
                             $result = $koneksi->query($sql);
                         
                             if ($result->num_rows > 0) {

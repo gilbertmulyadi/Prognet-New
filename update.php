@@ -2,7 +2,7 @@
 include 'koneksi.php';
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $id = $_POST['id_person'];
+    $id = $_POST['id'];
     $personName = isset($_POST["Name"]) ? $_POST["Name"] : "";
     $age = isset($_POST["Age"]) ? $_POST["Age"] : "";
     $dateOfBirth = isset($_POST["DateOfBirth"]) ? $_POST["DateOfBirth"] : "";
@@ -28,7 +28,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             instance = '$instance',
             email = '$email',
             phone_number = '$phoneNumber',
-            WHERE id_person = $id";
+            WHERE id = $id";
 
     if ($koneksi->query($sql) === TRUE) {
         echo "<script>
